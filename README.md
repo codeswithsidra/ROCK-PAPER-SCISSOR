@@ -6,6 +6,10 @@ A modern, fully responsive Rock-Paper-Scissors game built with **HTML**, **CSS**
 
 ![Game Preview](screenshot.png)
 
+## 🔗 Live Demo
+
+👉 [Click here to play](https://rockpaperscissorsgamebysidra.netlify.app/)
+
 ## 🚀 Features
 
 - Fully responsive on desktop, tablet, and mobile
