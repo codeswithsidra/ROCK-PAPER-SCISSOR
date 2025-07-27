@@ -1,0 +1,148 @@
+:root {
+  --background: #f8f9fa;
+  --primary: #18305a;
+  --highlight: #f45b69;
+  --border: #ced4da;
+  --hover: #e9ecef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.game-btn {
+  background: transparent;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.game-btn:hover {
+  background-color: var(--hover);
+  transform: scale(1.05);
+}
+
+.game-btn img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.message {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: var(--highlight);
+}
+
+.moves {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.scores,
+.msg {
+  font-size: 1.1rem;
+  margin-top: 25px;
+  color: var(--primary);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.action-btn , .js{
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: 600;
+  color: var(--primary);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.action-btn:hover , .js:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
+  .game-btn {
+    width: 90px;
+    height: 90px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .message {
+    font-size: 1.5rem;
+  }
+
+  .moves,
+  .scores,
+  .msg {
+    font-size: 1rem;
+  }
+
+  .action-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+.js{
+  margin-right: 10px;
+}
